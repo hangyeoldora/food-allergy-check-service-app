@@ -6,6 +6,7 @@ app.use(cors());
 // model 폴더로부터 db 가져오기
 const db = require("./models");
 const mysql = require('mysql');
+require("dotenv").config();
 
 // Post Router
 const postRouter = require('./routes/Posts');
@@ -29,8 +30,10 @@ app.use("/likes", likesRouter);
 
 // db sequlize 연결 (1)
 db.sequelize.sync().then(()=>{
-    app.listen(3001,()=>{
+    app.listen(process.env.PORT || 3001,()=>{
         // 서버 구동 확인
-        console.log("success");
+        console.log("running on server 3001");
     })
+}).catch((error)=>{
+    console.log(error);
 });
