@@ -29,12 +29,27 @@ app.use("/api", foodsRouter);
 const likesRouter = require("./routes/Likes");
 app.use("/likes", likesRouter);
 
+// mysql testing
+// const con = mysql.createConnection({
+//   host: "remotemysql.com",
+//   user: "",
+//   password: "",
+//   database: "",
+// });
+
+// con.connect((err) => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log("Success");
+//   }
+// });
+
 // db sequlize 연결 (1)
 db.sequelize
   .sync()
   .then(() => {
     app.listen(process.env.PORT || 3001, () => {
-      // 서버 구동 확인
       console.log("running on server 3001");
     });
   })

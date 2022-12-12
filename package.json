@@ -1,15 +1,23 @@
 {
-  "name": "server",
+  "name": "Allergy-check-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "devStart": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo \"No build specified\" && exit 1",
+    "test": "echo \"No test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hangyeoldora/Allergy-check-server.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hangyeoldora/Allergy-check-server/issues"
+  },
+  "homepage": "https://github.com/hangyeoldora/Allergy-check-server#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
