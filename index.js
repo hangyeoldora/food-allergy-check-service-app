@@ -8,7 +8,6 @@ const db = require("./models");
 const mysql = require("mysql");
 app.use(express.static("public"));
 require("dotenv").config();
-
 // Post Router
 const postRouter = require("./routes/Posts");
 app.use("/posts", postRouter);
