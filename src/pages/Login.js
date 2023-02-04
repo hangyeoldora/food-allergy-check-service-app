@@ -32,7 +32,7 @@ const Login = () => {
         <div className="loginContainer">
             <form className="loginSection">
                 {/* <img className="login-logo" src={process.env.PUBLIC_URL +"/logo/dongseo_logo.png"} /> */}
-                <p className="login-welcome">Welcome Back</p>
+                <p className="login-welcome">환영합니다.</p>
                 <label>Username: </label>
                 <input type="text" onChange={(e)=>{
                     setUsername(e.target.value);
