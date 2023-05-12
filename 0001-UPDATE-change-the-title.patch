@@ -1,0 +1,25 @@
+From 9f0bd1c4e268ebd1fe1c93abd768015d6120bc72 Mon Sep 17 00:00:00 2001
+From: "hg14699@naver.com" <hangyeoldora>
+Date: Thu, 2 Feb 2023 22:44:47 +0900
+Subject: [PATCH] [UPDATE] change the title
+
+---
+ src/pages/Login.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/pages/Login.js b/src/pages/Login.js
+index 8da4d35..ce5fc59 100644
+--- a/src/pages/Login.js
++++ b/src/pages/Login.js
+@@ -32,7 +32,7 @@ const Login = () => {
+         <div className="loginContainer">
+             <form className="loginSection">
+                 {/* <img className="login-logo" src={process.env.PUBLIC_URL +"/logo/dongseo_logo.png"} /> */}
+-                <p className="login-welcome">Welcome Back</p>
++                <p className="login-welcome">환영합니다.</p>
+                 <label>Username: </label>
+                 <input type="text" onChange={(e)=>{
+                     setUsername(e.target.value);
+-- 
+2.39.0
+

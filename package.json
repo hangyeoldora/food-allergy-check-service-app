@@ -15,12 +15,9 @@
     "bootstrap": "^5.1.3",
     "dotenv": "^16.0.3",
     "formik": "^2.2.9",
-<<<<<<< HEAD
     "react": "^18.2.0",
-=======
     "modernmt": "^1.1.0",
     "react": "^18.1.0",
->>>>>>> feature/translate
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
